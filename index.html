@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>jQuery Effects</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+        .divs{
+            width: 10%;
+            padding: 8%;
+            background-color: teal;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        button{
+            width: 15%;
+            height: 20%;
+            font-size: 20px;
+            margin: 0 auto;
+            display: block;            
+        }
+        </style>
+    </head>
+    <body>
+
+    <h1>jQuery Effects</h1>
+    <p>fadeIn/fadeOut/fadeToggle(time in ms, callbackFunction) OR fadeIn() - makes the element transparent and hides it. Default duration: 400ms</p>
+    <p>slideUp/slideDown/slideToggle(time in ms, callbackfunction) OR just as slideUp() - modifies the height of the element and hides it.</p>
+    <p>.remove() method: removes the element after the effect duration is over and modifies the style accordingly.</p>
+
+    <button id="btn1">Fade Out!</button>
+
+    <div id="div1">
+    <div class="divs">Fade ME</div>
+    <div class="divs">Fade ME First</div>
+    <div class="divs">I'm fading already</div>
+    </div>
+
+    <button id="btn2">Fade Toggle!</button>
+
+    <div id="div2">
+    <div class="divs">Fade ME</div>
+    <div class="divs">Fade ME First</div>
+    <div class="divs">I'm fading already</div>
+    </div>
+
+    <button id="btn3">Slide Up!</button>
+
+    <div id="div3">
+    <div class="divs">Fade ME</div>
+    <div class="divs">Fade ME First</div>
+    <div class="divs">I'm fading already</div>
+    </div>
+
+    <button id="btn5">Slide Toggle!</button>
+
+    <div id="div5">
+    <div class="divs">Fade ME</div>
+    <div class="divs">Fade ME First</div>
+    <div class="divs">I'm fading already</div>
+    </div>
+
+    <br><br><br>
+
+    <!-- jQuery CDN -->
+        
+    <script
+	  src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+	
+    <!-- Custom JS -->
+    <script src="effects.js" async defer></script>
+    </body>
+</html>
